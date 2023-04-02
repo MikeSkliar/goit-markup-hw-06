@@ -385,16 +385,28 @@
             <form class="modal-form">
                 <label class="modal-form-field">
                     <span class="modal-form-input-desc">Name</span>
-                    <input type="text" class="modal-form-input">
+                    <input type="text" name="user_name" class="modal-form-input" required pattern="[a-zA-Z]+"
+                        minlength="2">
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-input-desc">Phone</span>
-                    <input type="text" class="modal-form-input">
+                    <input type="tel" name="user_phone" class="modal-form-input" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="xxx-xxx-xxxx">
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-input-desc">Email</span>
-                    <input type="text" class="modal-form-input">
+                    <input type="email" name="user_email" class="modal-form-input" required>
                 </label>
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Comment</span>
+                    <textarea name="user_message" cols="30" rows="10" class="modal-form-messege"
+                        placeholder="Text input"></textarea>
+                </label>
+                <input id="user-policy" type="text" class="modal-form-check">
+                <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the <a
+                        href="">Privacy
+                        Policy</a></label>
+                <button type="submit" class="modal-form-submit">Send</button>
             </form>
         </div>
     </div>
