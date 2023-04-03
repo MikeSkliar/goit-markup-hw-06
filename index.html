@@ -371,10 +371,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="max-right-side-footer">
+                <p class="subscription-footer">Subscribe</p>
+                <form class="subscription-form">
+                    <input type="email" name="user_email" class="user-subscription-email" placeholder="E-mail" required>
+                    <button type="submit" class="subscription-btn">Subscribe<svg class="subscription-btn-icon" width="24px" height="20px">
+                            <use href="./images/sprite.svg#icon-subscription"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <!-- ==================BACKDROP WINDOW====================== -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-button" data-modal-close>
                 <svg class="modal-close-btn-icon" width="8px" height="8px">
@@ -417,7 +427,7 @@
                     <textarea name="user_message" class="modal-form-message" placeholder="Text input"></textarea>
                 </label>
                 <input id="user-policy" type="checkbox" name="" class="modal-form-check visually-hidden">
-                <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the <a
+                <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the&nbsp;<a class="link"
                         href="">Privacy
                         Policy</a></label>
                 <button type="submit" class="modal-form-submit">Send</button>
